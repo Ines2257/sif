@@ -53,12 +53,12 @@ Incident Response
 
 
 
--Scenarij: Radiš kao SOC analitičar s pristupom internom SIEM alatu koji prikuplja događaje iz više izvora i prikazuje ih na nadzornoj ploči.
+- Scenarij: Radiš kao SOC analitičar s pristupom internom SIEM alatu koji prikuplja događaje iz više izvora i prikazuje ih na nadzornoj ploči.
 
--Upozorenja (alerts): SIEM generira alert kada detektira sumnjive aktivnosti — analitičar ih treba istražiti.
+- Upozorenja (alerts): SIEM generira alert kada detektira sumnjive aktivnosti — analitičar ih treba istražiti.
 
--Simulacija SIEM-a: Postoji interaktivna, pojednostavljena simulacija koja replicira rad sličan stvarnom SIEM-u.
+- Simulacija SIEM-a: Postoji interaktivna, pojednostavljena simulacija koja replicira rad sličan stvarnom SIEM-u.
 
--Upute za pokretanje: Klikni "View Site" da otvoriš statičnu stranicu s desne strane ekrana i slijedi korake unutar simulacije.
+- Upute za pokretanje: Klikni "View Site" da otvoriš statičnu stranicu s desne strane ekrana i slijedi korake unutar simulacije.
 
--Cilj: Proći kroz korake, istražiti događaje i pronaći flag — pojavit će se nakon što su svi koraci završeni.
+- Cilj: Proći kroz korake, istražiti događaje i pronaći flag — pojavit će se nakon što su svi koraci završeni.
