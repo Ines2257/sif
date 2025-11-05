@@ -1,6 +1,6 @@
 #  IOC – Indicators of Compromise (Indikatori ugroženosti)
  
-**IOC (Indicators of Compromise)** odnose se na podatke koji pokazuju da je naš informacijski sustav kompromitiran i bio meta napada.  
+**IOC (Indicators of Compromise)** odnose se na podatke koji pokazuju da je naš informacijski sustav kompromitiran i bio meta napada  
  
 ---
  
@@ -20,4 +20,7 @@
 ###  Indikatori napada
 - Vezani uz **napad koji je u tijeku**  
 - Pomažu u **ranom otkrivanju** i reakciji na napad  
+
+---
  
+![alt text](image-1.png)
