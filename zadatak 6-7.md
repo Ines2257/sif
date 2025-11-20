@@ -411,20 +411,3 @@ Platforma za **IOC razmjenu**.
 * **Plaintext / Source:** View email content.
 * **Resolve Checkmark:** Classify email, flag malicious artefacts, and log results.
 
----
-
-## **Scenario Task**
-
-1. Start VM and open Thunderbird.
-2. Open **Email1.eml**.
-3. Use PhishTool or manual analysis to investigate:
-
-   * Email headers (source IP, sender domain, DKIM/SPF/DMARC)
-   * Attachments and URLs
-   * Any suspicious behaviour or artefacts
-4. Classify the email and flag malicious indicators.
-5. Record findings in resolution/notes.
-
----
----
-

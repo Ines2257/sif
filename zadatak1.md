@@ -26,6 +26,17 @@ Digital Forensics Technique
 - Ova tehnika može pomoći u razotkrivanju ponašanja zlonamjernog koda i povezanim procesima
 
 
+- Definicija: Primjena forenzičkih metoda na digitalne uređaje za očuvanje i analizu digitalnih dokaza (npr. kod sigurnosnih incidenata).
+- File System (Datotečni sustav):
+    - Analiza kopije pohrane otkriva instalirane programe, obrisane i djelomično prebrisane datoteke.
+- System Memory (Memorija sustava):
+    - Ako zlonamjerni kod radi samo u RAM-u, analizom memorije otkriva se njegovo ponašanje i rad.
+- System Logs (Sistemski zapisi):
+    - Zapisi pokazuju radnje na sustavu; ostaju tragovi i ako ih napadač pokuša obrisati.
+- Network Logs (Mrežni zapisi):
+    - Analiza mrežnog prometa pomaže utvrditi odvija li se napad i u kojem obliku.
+
+
 * **Cyber Kill Chain**: sigurnosni okvir iz 2011. od Lockheed Martina, inspiriran vojnim “kill chain” konceptom
 * Pomaže organizacijama razumjeti i braniti se od cyber napada
 * **7 faza napada:**
@@ -45,7 +56,6 @@ Digital Forensics Technique
   * Pogledati primjere obrane po fazama
 * Preporuka: završiti *Cyber Security 101* put za bolje razumijevanje.
 
----
 
 
 * **Reconnaissance** = prikupljanje informacija o cilju, traženje ranjivosti i potencijalnih ulaza
@@ -55,6 +65,7 @@ Digital Forensics Technique
 
     * Primjeri: WHOIS, DNS, web crawling, social media, Google Dorking
   * **Aktivna:** napadač mora stupiti u interakciju, može biti „bučna“
+
 
     * Primjeri: port scanning, vulnerability scanning, fizičko izviđanje cilja
 * **Protumjere / obrana:**
@@ -88,6 +99,37 @@ Digital Forensics Technique
 
 ---
 
+
+- Internet = golema mreža sastavljena od mnogih manjih mreža
+
+- Primjer s Alice, Zaynom i Tobyjem pokazuje kako mreže međusobno komuniciraju putem “posrednika”
+
+- ARPANET (1960-e) – prvi oblik interneta, financiran od strane američkog Ministarstva obrane
+
+- 1989. – Tim Berners-Lee stvara World Wide Web (WWW), što omogućuje pohranu i dijeljenje informacija
+
+- Internet je spoj privatnih i javnih mreža:
+
+- Privatna mreža – manja, zatvorena mreža
+
+- Javna mreža (Internet) – povezuje privatne mreže
+
+- Uređaji u mreži imaju oznake (identifikatore) za međusobno prepoznavanje
+
+
+* Uređaji na mreži trebaju biti **identificirani i prepoznatljivi**.
+* Dva načina identifikacije (poput imena i otisaka prstiju):
+
+  * **IP adresa** (promjenjiva, identificira uređaj na mreži; javna vs. privatna; IPv4 vs. IPv6)
+  * **MAC adresa** (stalna, tvornička, 12-znamenkovni heksadecimalni identifikator)
+* IP adresa se sastoji od okteta (IPv4: 4 okteta), može se mijenjati i koristi protokole; javne IP adrese dodjeljuje ISP.
+* IPv4 ima ~4.29 milijarde adresa; **IPv6** rješava nestašicu (2^128 adresa).
+* MAC adresa: prvih 6 znakova identificira proizvođača, zadnjih 6 su jedinstveni broj; može se **spoofati** (lažirati).
+* Spoofing MAC adrese može zaobići loše postavljene sigurnosne mjere (npr. firewall koji se oslanja samo na MAC).
+* Primjer/praktični lab: hotel Wi‑Fi koji blokira neplaćene uređaje — pokušaj promjene Bobove MAC adrese u Aliceinu.
+
+IP address and MAC address
+=======
 * **Delivery** = metode isporuke malicioznog payloada.
 * Primjeri metoda:
 
@@ -316,6 +358,7 @@ Digital Forensics Technique
 * Desni klik → **Follow → HTTP Stream** za kompletan request/response.
 * Traži: directory fuzz GET-ove, brze POST-ove za `/login.php` (uspješan POST s lozinkom), SQLi payload u URL‑u ili tijelu.
 * Koristi `tshark` za brzo ekstraktiranje URL‑ova i potencijalnih lozinki iz `traffic.pcap`.
+
 
 
 
