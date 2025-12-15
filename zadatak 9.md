@@ -146,4 +146,56 @@ Propisi o privatnosti štite **PII (Personally Identifiable Information)**, osig
 * Zahtijeva strogu kontrolu pristupa, enkripciju i nadzor pristupa
 
 ---
+---
+
+## **Information Security Management vs Compliance**
+
+* **IS Management** – planiranje, provedba i održavanje sigurnosnih mjera (rizici, kontrole, incidenti, edukacija).
+* **Compliance** – poštivanje zakona, regulativa i industrijskih standarda.
+
+---
+
+## **ISO/IEC 27001**
+
+Međunarodni standard za uspostavu i upravljanje **ISMS-om**.
+
+**Ključne komponente:**
+
+* Opseg ISMS-a
+* Sigurnosna politika
+* Procjena i tretman rizika
+* **SoA (Statement of Applicability)**
+* Interni audit
+* Pregled uprave
+
+**Prednosti:**
+sustavno upravljanje rizicima, jača sigurnost, stalno poboljšanje, povjerenje klijenata.
+
+---
+
+## **SOC 2**
+
+Revizijski standard (AICPA) za procjenu sigurnosti usluga prema **CIA + privatnost**.
+
+**Bitno:**
+
+* Namijenjen pružateljima usluga (cloud, SaaS)
+* Provode ga neovisni revizori
+* SOC 2 izvješće dokazuje da su kontrole učinkovite
+* Često konkurentska prednost
+
+---
+
+## **SOC 2 audit – ukratko**
+
+1. Definirati opseg
+2. Odabrati auditora
+3. Pripremiti kontrole i dokumentaciju
+4. Provesti audit
+5. Zaprimiti izvješće i preporuke
+
+**Provjeravaju se:**
+kontrole pristupa, mrežna sigurnost, enkripcija, incident management, backup, edukacija zaposlenika.
+
+---
 
