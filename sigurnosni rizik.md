@@ -70,5 +70,5 @@ Ako je cijena zaštite manja od ALE, isplati se ulagati.
 Matrica rizika povezuje vjerojatnost i utjecaj. Pomaže odrediti koji su rizici prihvatljivi, a koje treba hitno smanjiti, te omogućuje jasnu prioritizaciju.
 
 ---
-![alt text](image-2.png)
+
 
