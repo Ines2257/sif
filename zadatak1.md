@@ -363,6 +363,105 @@ IP address and MAC address
 
 
 
+# 11vjezba
+
+## 1. Što je Nmap
+
+* **Nmap (Network Mapper)** je alat za mapiranje mreže i otkrivanje uređaja i servisa.
+* Koristi se u **cybersecurity i penetration testingu**.
+* Glavna pitanja na koja odgovara:
+
+  * Koji su **hostovi aktivni (online)**
+  * Koji **servisi rade na njima** ([TryHackMe][1])
+
+---
+
+# 2. Host Discovery (otkrivanje aktivnih računala)
+
+Prije skeniranja portova Nmap prvo provjerava **koji su uređaji online**, da ne gubi vrijeme na offline sustave. ([TryHackMe][1])
+
+Metode:
+
+### 1. ARP Scan
+
+* Koristi **ARP zahtjeve** za otkrivanje hostova.
+* Radi samo **unutar istog subnet-a (lokalne mreže)**.
+* Ako host odgovori ARP reply → **host je online**. ([TryHackMe][1])
+
+Primjer:
+
+```
+nmap -PR -sn 192.168.1.0/24
+```
+
+---
+
+### 2. ICMP Scan (Ping)
+
+* Šalje **ICMP Echo Request (ping)**.
+* Ako dobije **ICMP Echo Reply** → host je aktivan. ([TryHackMe][1])
+
+---
+
+### 3. TCP Ping Scan
+
+Koristi TCP pakete da vidi je li host aktivan.
+
+Vrste:
+
+**TCP SYN Ping**
+
+```
+nmap -PS -sn TARGET
+```
+
+* šalje SYN paket
+* SYN/ACK ili RST odgovor znači da je host online. ([TryHackMe][1])
+
+**TCP ACK Ping**
+
+```
+nmap -PA -sn TARGET
+```
+
+* šalje ACK paket
+* dobiva RST odgovor → host je online. ([TryHackMe][1])
+
+---
+
+### 4. UDP Ping
+
+```
+nmap -PU -sn TARGET
+```
+
+* šalje UDP paket
+* ICMP port unreachable odgovor znači da je host aktivan. ([TryHackMe][1])
+
+---
+
+# 3. Važne Nmap opcije
+
+* `-sn` → samo otkrivanje hostova (bez port scan-a)
+* `-PR` → ARP scan
+* `-PS` → TCP SYN ping
+* `-PA` → TCP ACK ping
+* `-PU` → UDP ping
+* `-n` → bez DNS lookupa
+* `-R` → reverse DNS lookup za sve hostove ([TryHackMe][1])
+
+---
+
+# 4. Važne mrežne stvari
+
+* **Subnet** = dio mreže s vlastitim IP rasponom.
+* Primjeri:
+
+  * `/24` → oko **256 adresa**
+  * `/16` → oko **65 000 adresa** ([TryHackMe][1])
+
+
+
 
 
 
